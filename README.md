@@ -17,7 +17,6 @@ The Phone Tracker App with CustomTkinter is a graphical application developed to
 Real-Time Location Tracking: The app allows users to track the real-time location of mobile phones.
 Intuitive User Interface: The CustomTkinter module is employed to create a visually appealing and user-friendly interface.
 History Tracking: Users can view the historical locations of the tracked phones.
-Secure Authentication: The app incorporates secure authentication to ensure that only authorized users can access the tracking features.
 
 ## Prerequisites
 Before using the Phone Tracker App, make sure you have the following prerequisites:
