@@ -1,4 +1,8 @@
 import customtkinter as ctk
+import sys
+import subprocess
+
+subprocess.check_call([sys.executable, "-m", "pip", "install", "tkintermapview"])
 from tkintermapview import TkinterMapView
 
 ctk.set_default_color_theme("blue")
