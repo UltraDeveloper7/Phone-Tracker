@@ -137,7 +137,9 @@ class App(ctk.CTk):
     def on_closing(self, event=0):
         self.destroy()
 
-    def start(self):
+    def start(self, coordinates=None):
+        if coordinates is not None:
+            self.add_marker_event(coordinates)
         self.mainloop()
 
 
