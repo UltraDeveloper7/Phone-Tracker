@@ -156,9 +156,8 @@ class GUI:
         coordinates = self.phonenumber(phone_number)
         print(coordinates)
         app = App()
-        app.start()
-        app.add_marker_event(coordinates)
-
+        app.start(coordinates)
+        
 
     def change_appearance_mode(self, new_appearance_mode):
         ctk.set_appearance_mode(new_appearance_mode)
