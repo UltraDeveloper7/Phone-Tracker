@@ -1,5 +1,3 @@
-import sys
-import subprocess
 import phonenumbers
 from phonenumbers import geocoder, carrier
 import folium
