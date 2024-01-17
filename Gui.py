@@ -1,6 +1,4 @@
 import os
-import sys
-import subprocess
 import tkinter as tk
 from ctypes import * # type: ignore
 
