@@ -1,5 +1,7 @@
 ## Phone Tracker App with CustomTkinter
 
+![Phone Tracker](https://github.com/UltraDeveloper7/Phone-Tracker/assets/75303541/b8a3a95f-ac71-4b2e-b83e-be579c0c97f5)
+
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
