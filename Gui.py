@@ -4,9 +4,6 @@ import subprocess
 import tkinter as tk
 from ctypes import * # type: ignore
 
-subprocess.check_call([sys.executable, "-m", "pip", "install", "customtkinter"])
-subprocess.check_call([sys.executable, "-m", "pip", "install", "pillow"])
-
 import customtkinter as ctk
 from PIL import Image
 
@@ -50,6 +47,7 @@ class GUI:
         self.root.geometry(f"{self.width}x{self.height}+400+300")
         self.root.resizable(False,False)
         self.root.title('Phone Tracker')
+        self.app = None # Initialize the App instance
 
         # Adding labels to GUI
         current_file_path = os.path.dirname(os.path.realpath(__file__))
@@ -134,6 +132,11 @@ class GUI:
         coordinates = (latitude, longitude)
         return coordinates
 
+    def open_MapView(self,phone_number):
+        coordinates = self.phonenumber(phone_number)
+        self.app = App(self.root)
+        self.app.start(coordinates)
+
         
     def enter_pressed(self):
         phone_number = self.phone_number_textbox.get().lower()
@@ -151,13 +154,7 @@ class GUI:
         else:
             self.phonenumber(phone_number)  
             self.open_MapView(phone_number)
-                    
-    def open_MapView(self,phone_number):
-        coordinates = self.phonenumber(phone_number)
-        print(coordinates)
-        app = App()
-        app.start(coordinates)
-        
+
 
     def change_appearance_mode(self, new_appearance_mode):
         ctk.set_appearance_mode(new_appearance_mode)
