@@ -23,10 +23,9 @@ History Tracking: Users can view the historical locations of the tracked phones.
 ## Prerequisites
 Before using the Phone Tracker App, make sure you have the following prerequisites:
 1. Python Installed: Ensure that Python is installed on your system. You can download it from [Python](https://www.python.org/).
-2. CustomTkinter Module: Install the CustomTkinter module by running the following command:
-
+2. All the module libraries that are being included in the requirements.txt. You can download all the required libraries by opening a terminal and typing the following command:
 ```bash
-pip install customtkinter
+pip install -r requirements.txt
 ```
 
 ## Installation
