@@ -1,0 +1,6 @@
+phonenumbers
+folium
+opencage
+tkintermapview
+customtkinter
+pillow
