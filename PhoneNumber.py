@@ -1,17 +1,11 @@
 import sys
 import subprocess
-
-subprocess.check_call([sys.executable, "-m", "pip", "install", "phonenumbers"])
-subprocess.check_call([sys.executable, "-m", "pip", "install", "folium"])
-subprocess.check_call([sys.executable, "-m", "pip", "install", "opencage"])
-
 import phonenumbers
 from phonenumbers import geocoder, carrier
 import folium
 from opencage.geocoder import OpenCageGeocode
 
 class PhoneNumber:
-
     def __init__(self, phone_number):
         self.number = phone_number
         
