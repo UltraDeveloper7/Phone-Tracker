@@ -114,7 +114,7 @@ class GUI:
 
         self.root.bind("<Return>",
                     lambda event: self.enter_pressed)
-        
+        self.root.bind("<Command-q>", self.on_closing)
         self.root.protocol("WM_DELETE_WINDOW", self.on_closing)
 
 ########## Functions for the widgets ##############
